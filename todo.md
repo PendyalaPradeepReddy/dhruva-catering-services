@@ -1,0 +1,4 @@
+- [x] Select and prepare distinct imagery for wedding banquets, private events, live counters, and corporate catering.
+- [x] Add image-led service storytelling to the Home page service overview.
+- [x] Add supporting visual moments to the Services page service index.
+- [x] Verify desktop and mobile composition before saving the revised website version.

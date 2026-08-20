@@ -8,10 +8,10 @@ const heroImage = "/manus-storage/dhruva-buffet-hero_5062b44e.webp";
 const brassBuffet = "/manus-storage/dhruva-brass-buffet_7590f1e7.jpg";
 
 const services = [
-  { icon: CalendarHeart, title: "Wedding & reception", copy: "Well-paced banquet service and menus designed around the occasion." },
-  { icon: Sparkles, title: "Live counter moments", copy: "Freshly made counter experiences that bring energy to the celebration." },
-  { icon: UtensilsCrossed, title: "Family occasions", copy: "Intimate engagement, birthday, and house-event catering from 50 guests." },
-  { icon: UsersRound, title: "Corporate gatherings", copy: "Dependable meal service for teams, launches, conferences, and large groups." },
+  { icon: CalendarHeart, title: "Wedding & reception", label: "Wedding banquets", image: "/manus-storage/dhruva-wedding-table_374d063a.jpg", alt: "An Indian wedding table arranged with celebration food", copy: "Well-paced banquet service and menus designed around the occasion." },
+  { icon: Sparkles, title: "Live counter moments", label: "Live service", image: "/manus-storage/dhruva-live-counter_5f6ac40b.jpg", alt: "Chefs preparing food at a live catering counter", copy: "Freshly made counter experiences that bring energy to the celebration." },
+  { icon: UtensilsCrossed, title: "Family occasions", label: "Private celebrations", image: "/manus-storage/dhruva-desserts_9d002133.jpg", alt: "Traditional Indian sweets arranged for a private celebration", copy: "Intimate engagement, birthday, and house-event catering from 50 guests." },
+  { icon: UsersRound, title: "Corporate gatherings", label: "Large-format service", image: "/manus-storage/dhruva-menu-spread_55792867.jpg", alt: "A generous Indian food spread prepared for a catered gathering", copy: "Dependable meal service for teams, launches, conferences, and large groups." },
 ];
 
 const eventScales = [
@@ -90,7 +90,7 @@ export default function Home() {
         <section className="bg-[#FFF9EF] py-20 sm:py-28">
           <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-10"><SectionFlag>What we bring to the table</SectionFlag><div className="mt-5 flex flex-col justify-between gap-6 md:flex-row md:items-end"><h2 className="max-w-2xl font-display text-5xl font-semibold leading-[0.95] tracking-[-0.055em] text-[#621111]">A considered spread for every kind of gathering.</h2><Link href="/services" className="inline-flex min-h-11 items-center gap-2 text-[0.72rem] font-bold uppercase tracking-[0.1em] text-[#800000] hover:text-[#F28C28]">See all services <ArrowRight className="size-4" /></Link></div>
             <div className="mt-12 grid divide-y divide-[#800000]/15 border-y border-[#800000]/15 md:grid-cols-2 md:divide-x md:divide-y-0">
-              {services.map((service, index) => { const Icon = service.icon; return <article key={service.title} className={`group p-7 transition-colors hover:bg-[#F6E9D5] sm:p-9 ${index > 1 ? "md:pt-10" : ""}`}><div className="flex items-start justify-between gap-6"><Icon className="size-6 text-[#F28C28]" strokeWidth={1.8} /><span className="font-display text-xl italic text-[#D4AF37]">0{index + 1}</span></div><h3 className="mt-12 font-display text-3xl font-semibold tracking-[-0.04em] text-[#621111]">{service.title}</h3><p className="mt-3 max-w-sm font-body text-sm leading-6 text-[#714D40]">{service.copy}</p></article>})}
+              {services.map((service, index) => { const Icon = service.icon; return <article key={service.title} className={`group p-5 transition-colors hover:bg-[#F6E9D5] sm:p-7 ${index > 1 ? "md:pt-8" : ""}`}><div className="relative aspect-[16/9] overflow-hidden rounded-[38%_38%_1.2rem_1.2rem/14%_14%_1.2rem_1.2rem] border border-[#D4AF37]/75 bg-[#621111] p-1"><img src={service.image} alt={service.alt} loading="lazy" decoding="async" className="h-full w-full rounded-[38%_38%_1rem_1rem/14%_14%_1rem_1rem] object-cover transition-transform duration-500 group-hover:scale-[1.045]" /><span className="absolute bottom-3 left-3 rounded-full bg-[#621111]/90 px-3 py-1.5 text-[0.58rem] font-bold uppercase tracking-[0.14em] text-white backdrop-blur">{service.label}</span></div><div className="mt-6 flex items-start justify-between gap-6"><Icon className="size-6 text-[#F28C28]" strokeWidth={1.8} /><span className="font-display text-xl italic text-[#D4AF37]">0{index + 1}</span></div><h3 className="mt-6 font-display text-3xl font-semibold tracking-[-0.04em] text-[#621111]">{service.title}</h3><p className="mt-3 max-w-sm font-body text-sm leading-6 text-[#714D40]">{service.copy}</p></article>})}
             </div>
           </div>
         </section>
