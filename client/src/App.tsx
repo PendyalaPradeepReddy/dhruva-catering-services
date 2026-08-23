@@ -11,11 +11,13 @@ import Menu from "./pages/Menu";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import { LoadingScreen } from "./components/LoadingScreen";
+import { PageTransition } from "./components/PageTransition";
+import { LocalSeo } from "./components/LocalSeo";
 
 function Router() {
   return <Switch><Route path="/" component={Home} /><Route path="/about" component={About} /><Route path="/services" component={Services} /><Route path="/menu" component={Menu} /><Route path="/gallery" component={Gallery} /><Route path="/contact" component={Contact} /><Route component={NotFound} /></Switch>;
 }
 
 export default function App() {
-  return <ErrorBoundary><ThemeProvider defaultTheme="light"><LoadingScreen /><Toaster /><Router /></ThemeProvider></ErrorBoundary>;
+  return <ErrorBoundary><ThemeProvider defaultTheme="light"><LoadingScreen /><LocalSeo /><Toaster /><PageTransition><Router /></PageTransition></ThemeProvider></ErrorBoundary>;
 }

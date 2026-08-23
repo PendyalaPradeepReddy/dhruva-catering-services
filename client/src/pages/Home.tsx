@@ -3,6 +3,8 @@ import { ArrowRight, CalendarHeart, ChefHat, Check, Clock3, Sparkles, Star, Uten
 import { Link } from "wouter";
 import { BUSINESS, PageShell } from "@/components/SiteChrome";
 import { Seo } from "@/components/Seo";
+import { LOCAL_FAQS } from "@/components/LocalSeo";
+import { ScrollReveal } from "@/components/ScrollReveal";
 
 const heroImage = "/manus-storage/dhruva-buffet-hero_5062b44e.webp";
 const brassBuffet = "/manus-storage/dhruva-brass-buffet_7590f1e7.jpg";
@@ -20,18 +22,6 @@ const eventScales = [
   { number: "1,000–5,000+", name: "Mega events", copy: "Large celebrations & corporate gatherings", fill: "w-full" },
 ];
 
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "CateringService"],
-  name: "Dhruva Catering Services",
-  telephone: "+91 98494 93933",
-  address: { "@type": "PostalAddress", streetAddress: "Lead India School, Hunter Rd, Dwaraka Nagar, Shyampet", addressLocality: "Hanamkonda", addressRegion: "Telangana", postalCode: "506001", addressCountry: "IN" },
-  openingHours: "Mo-Su 00:00-23:59",
-  areaServed: ["Hanamkonda", "Warangal", "Telangana"],
-  aggregateRating: { "@type": "AggregateRating", ratingValue: "4.8", reviewCount: "136" },
-  url: window.location.origin,
-};
-
 function SectionFlag({ children }: { children: string }) {
   return <p className="flex items-center gap-3 text-[0.66rem] font-bold uppercase tracking-[0.2em] text-[#9A5C0E]"><span className="h-px w-9 bg-[#D4AF37]" />{children}</p>;
 }
@@ -40,7 +30,6 @@ export default function Home() {
   return (
     <PageShell>
       <Seo title="Dhruva Catering Services | Best Catering Services in Hanamkonda" description="Dhruva Catering Services creates memorable wedding, family, live-counter and corporate catering experiences in Hanamkonda, Warangal and across Telangana." />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       <main>
         <section className="relative isolate min-h-[670px] overflow-hidden bg-[#41100D] text-[#FFF9EF] lg:min-h-[690px]">
           <img src={heroImage} alt="An abundant Indian wedding buffet prepared for a celebration" fetchPriority="high" className="absolute inset-0 h-full w-full object-cover object-[68%_center]" />
@@ -90,13 +79,14 @@ export default function Home() {
         <section className="bg-[#FFF9EF] py-20 sm:py-28">
           <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-10"><SectionFlag>What we bring to the table</SectionFlag><div className="mt-5 flex flex-col justify-between gap-6 md:flex-row md:items-end"><h2 className="max-w-2xl font-display text-5xl font-semibold leading-[0.95] tracking-[-0.055em] text-[#621111]">A considered spread for every kind of gathering.</h2><Link href="/services" className="inline-flex min-h-11 items-center gap-2 text-[0.72rem] font-bold uppercase tracking-[0.1em] text-[#800000] hover:text-[#F28C28]">See all services <ArrowRight className="size-4" /></Link></div>
             <div className="mt-12 grid divide-y divide-[#800000]/15 border-y border-[#800000]/15 md:grid-cols-2 md:divide-x md:divide-y-0">
-              {services.map((service, index) => { const Icon = service.icon; return <article key={service.title} className={`group p-5 transition-colors hover:bg-[#F6E9D5] sm:p-7 ${index > 1 ? "md:pt-8" : ""}`}><div className="relative aspect-[16/9] overflow-hidden rounded-[38%_38%_1.2rem_1.2rem/14%_14%_1.2rem_1.2rem] border border-[#D4AF37]/75 bg-[#621111] p-1"><img src={service.image} alt={service.alt} loading="lazy" decoding="async" className="h-full w-full rounded-[38%_38%_1rem_1rem/14%_14%_1rem_1rem] object-cover transition-transform duration-500 group-hover:scale-[1.045]" /><span className="absolute bottom-3 left-3 rounded-full bg-[#621111]/90 px-3 py-1.5 text-[0.58rem] font-bold uppercase tracking-[0.14em] text-white backdrop-blur">{service.label}</span></div><div className="mt-6 flex items-start justify-between gap-6"><Icon className="size-6 text-[#F28C28]" strokeWidth={1.8} /><span className="font-display text-xl italic text-[#D4AF37]">0{index + 1}</span></div><h3 className="mt-6 font-display text-3xl font-semibold tracking-[-0.04em] text-[#621111]">{service.title}</h3><p className="mt-3 max-w-sm font-body text-sm leading-6 text-[#714D40]">{service.copy}</p></article>})}
+              {services.map((service, index) => { const Icon = service.icon; return <article key={service.title} className={`group p-5 transition-colors hover:bg-[#F6E9D5] sm:p-7 ${index > 1 ? "md:pt-8" : ""}`}><ScrollReveal><div className="relative aspect-[16/9] overflow-hidden rounded-[38%_38%_1.2rem_1.2rem/14%_14%_1.2rem_1.2rem] border border-[#D4AF37]/75 bg-[#621111] p-1"><img src={service.image} alt={service.alt} loading="lazy" decoding="async" className="h-full w-full rounded-[38%_38%_1rem_1rem/14%_14%_1rem_1rem] object-cover transition-transform duration-500 group-hover:scale-[1.045]" /><span className="absolute bottom-3 left-3 rounded-full bg-[#621111]/90 px-3 py-1.5 text-[0.58rem] font-bold uppercase tracking-[0.14em] text-white backdrop-blur">{service.label}</span></div></ScrollReveal><div className="mt-6 flex items-start justify-between gap-6"><Icon className="size-6 text-[#F28C28]" strokeWidth={1.8} /><span className="font-display text-xl italic text-[#D4AF37]">0{index + 1}</span></div><h3 className="mt-6 font-display text-3xl font-semibold tracking-[-0.04em] text-[#621111]">{service.title}</h3><p className="mt-3 max-w-sm font-body text-sm leading-6 text-[#714D40]">{service.copy}</p></article>})}
             </div>
           </div>
         </section>
 
         <section className="bg-[#621111] py-16 text-[#FFF9EF] sm:py-20"><div className="mx-auto grid max-w-[1440px] gap-10 px-5 sm:px-8 md:grid-cols-[0.82fr_1.18fr] md:items-center lg:px-10"><div className="rounded-[1.5rem_0.4rem_1.5rem_0.4rem] border border-[#D4AF37]/60 bg-[#7B2118] p-7 sm:p-9"><div className="flex items-center gap-1 text-[#FFD270]">{Array.from({ length: 5 }).map((_, i) => <Star key={i} className="size-5" fill="currentColor" />)}</div><p className="mt-5 font-display text-5xl font-semibold tracking-[-0.06em]">4.8<span className="text-[#F28C28]">/5</span></p><p className="mt-2 text-[0.7rem] font-bold uppercase tracking-[0.15em] text-[#F9E7D0]/75">Google rating · 136+ reviews</p></div><div><SectionFlag>Chosen with confidence</SectionFlag><h2 className="mt-5 max-w-xl font-display text-5xl font-semibold leading-[0.96] tracking-[-0.055em] text-[#FFF9EF]">A local table, trusted for the big day.</h2><p className="mt-5 max-w-xl font-body text-base leading-7 text-[#F9E7D0]/80">A strong Google rating reflects the care Dhruva brings to every menu, timing plan, and guest experience.</p></div></div></section>
 
+        <section className="bg-[#FFF9EF] px-5 py-20 sm:px-8 sm:py-24 lg:px-10"><div className="mx-auto grid max-w-[1440px] gap-10 lg:grid-cols-[0.65fr_1.35fr]"><div><SectionFlag>Catering at a glance</SectionFlag><h2 className="mt-5 max-w-md font-display text-5xl font-semibold leading-[0.96] tracking-[-0.055em] text-[#621111]">Clear answers before the first call.</h2><p className="mt-5 max-w-md font-body text-base leading-7 text-[#714D40]">Dhruva is based in Hanamkonda, available around the clock, and built to host celebrations from 50 guests to 5,000+ across Telangana.</p></div><div className="grid gap-3">{LOCAL_FAQS.map((item, index) => <details key={item.question} className="group border-b border-[#800000]/15 py-5"><summary className="flex min-h-11 list-none items-center justify-between gap-5 font-display text-xl font-semibold tracking-[-0.03em] text-[#621111] marker:content-none"><span>{item.question}</span><span className="grid size-7 shrink-0 place-items-center rounded-full border border-[#800000]/20 font-body text-lg text-[#F28C28] transition-transform group-open:rotate-45">+</span></summary><p className="max-w-3xl pt-4 font-body text-sm leading-6 text-[#714D40]">{item.answer}</p></details>)}</div></div></section>
         <section className="bg-[#F28C28] px-5 py-16 text-[#451207] sm:px-8 sm:py-20 lg:px-10"><div className="mx-auto flex max-w-[1440px] flex-col justify-between gap-8 lg:flex-row lg:items-center"><div><p className="text-[0.66rem] font-bold uppercase tracking-[0.2em] text-[#6C2110]">Begin with your occasion</p><h2 className="mt-4 max-w-3xl font-display text-5xl font-semibold leading-[0.96] tracking-[-0.055em]">Tell us the date, your guest count, and how you want the table to feel.</h2></div><Link href="/contact" className="inline-flex min-h-12 shrink-0 items-center justify-center gap-2 rounded-full bg-[#621111] px-6 text-[0.72rem] font-bold uppercase tracking-[0.1em] text-white transition-all hover:-translate-y-1 hover:bg-[#451207] active:scale-[0.97]">Plan your menu <ArrowRight className="size-4" /></Link></div></section>
       </main>
     </PageShell>

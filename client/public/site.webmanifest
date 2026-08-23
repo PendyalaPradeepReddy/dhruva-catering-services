@@ -1,0 +1,17 @@
+{
+  "name": "Dhruva Catering Services",
+  "short_name": "Dhruva Catering",
+  "description": "Event catering and cooking services in Hanamkonda, Telangana.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFF9EF",
+  "theme_color": "#800000",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

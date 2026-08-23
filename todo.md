@@ -4,3 +4,7 @@
 - [x] Verify desktop and mobile composition before saving the revised website version.
 - [x] Add a Dhruva symbol loading screen with a short, reduced-motion-safe transition.
 - [x] Verify that the website remains accessible and usable once the loading state clears.
+- [x] Add reduced-motion-safe transitions between routes and preserve keyboard focus behavior.
+- [x] Reveal Home and Services imagery smoothly as each image enters the viewport.
+- [x] Add local-business and service schema enhancements, AI-readable page summaries, and crawl guidance.
+- [x] Verify responsive navigation, motion, content hierarchy, and touch targets across key mobile routes.
