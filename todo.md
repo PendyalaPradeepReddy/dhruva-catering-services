@@ -2,3 +2,5 @@
 - [x] Add image-led service storytelling to the Home page service overview.
 - [x] Add supporting visual moments to the Services page service index.
 - [x] Verify desktop and mobile composition before saving the revised website version.
+- [x] Add a Dhruva symbol loading screen with a short, reduced-motion-safe transition.
+- [x] Verify that the website remains accessible and usable once the loading state clears.
