@@ -18,4 +18,6 @@
 - [x] Replace Manus-managed image paths with repository-hosted static paths for Cloudflare deployment.
 - [x] Change the connected GitHub repository visibility to public.
 - [x] Build, verify, and synchronize the GitHub-ready asset update.
+- [x] Replace the hosting-dependent contact map with a direct business-location link.
+- [x] Verify the location link is reachable and clear on desktop and mobile.
 - [ ] Change the connected GitHub repository visibility to public.
