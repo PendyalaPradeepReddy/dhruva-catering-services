@@ -5,7 +5,7 @@ import { BUSINESS, PageShell } from "@/components/SiteChrome";
 import { Seo } from "@/components/Seo";
 
 const menuPdf = "/manus-storage/dhruva-catering-menu_9dc10495.pdf";
-const menuImage = "/manus-storage/dhruva-menu-spread_55792867.jpg";
+const menuImage = "/manus-storage/dhruva-menu-spread-optimized_f99233c0.webp";
 const menus = [
   { id: "veg", label: "Traditional Veg Feast", lead: "A soulful vegetarian spread built around fresh regional flavours and thoughtful combinations.", groups: [{ title: "A welcome start", items: ["Welcome drink selection", "Seasonal savoury bites", "Traditional snack course"] }, { title: "Main feast", items: ["Regional curries & dals", "Fresh breads and rice preparations", "Curd rice and accompaniments"] }, { title: "Finishing notes", items: ["Traditional sweet course", "Seasonal fruit", "Pan or digestive option"] }] },
   { id: "nonveg", label: "Non-Veg Specialties", lead: "A celebratory non-vegetarian menu shaped around comforting favourites and memorable centrepieces.", groups: [{ title: "Signature starters", items: ["Chef-selected chicken starter", "Regional non-vegetarian appetiser", "Fresh vegetarian companion starter"] }, { title: "Main table", items: ["Chicken or mutton speciality", "Seasonal curry selection", "Rice, breads & accompaniments"] }, { title: "Sweet conclusion", items: ["Indian dessert selection", "Ice cream or chilled dessert", "Seasonal fruit"] }] },

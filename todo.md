@@ -8,3 +8,6 @@
 - [x] Reveal Home and Services imagery smoothly as each image enters the viewport.
 - [x] Add local-business and service schema enhancements, AI-readable page summaries, and crawl guidance.
 - [x] Verify responsive navigation, motion, content hierarchy, and touch targets across key mobile routes.
+- [x] Inspect the current production build and identify the largest loading-path opportunities.
+- [x] Optimize image fetch priority, non-critical runtime work, and loading-state timing without reducing usability.
+- [x] Validate the optimized production build and preserve responsive behavior.

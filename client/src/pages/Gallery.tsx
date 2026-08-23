@@ -7,8 +7,8 @@ import { Seo } from "@/components/Seo";
 const gallery = [
   { src: "/manus-storage/dhruva-event-plating_264e552b.jpg", alt: "An abundant catering arrangement at a celebration", label: "Celebration spreads", tall: true },
   { src: "/manus-storage/dhruva-service-closeup_44dbc90d.jpg", alt: "Catered Indian dishes served in a buffet setting", label: "Made for the table", tall: false },
-  { src: "/manus-storage/dhruva-desserts_9d002133.jpg", alt: "Indian sweets arranged for a celebration", label: "A sweet finish", tall: false },
-  { src: "/manus-storage/dhruva-brass-buffet_7590f1e7.jpg", alt: "Polished Indian buffet serving vessels", label: "The buffet line", tall: true },
+  { src: "/manus-storage/dhruva-desserts-optimized_f0056a0a.webp", alt: "Indian sweets arranged for a celebration", label: "A sweet finish", tall: false },
+  { src: "/manus-storage/dhruva-brass-buffet-optimized_4dae9f8f.webp", alt: "Polished Indian buffet serving vessels", label: "The buffet line", tall: true },
 ];
 
 export default function Gallery() { return <PageShell><Seo title="Catering Gallery | Dhruva Catering Services" description="Browse a selection of buffet spreads, celebration food displays and catering details from Dhruva Catering Services in Hanamkonda." /><main>

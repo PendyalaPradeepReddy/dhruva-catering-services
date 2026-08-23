@@ -7,13 +7,13 @@ import { LOCAL_FAQS } from "@/components/LocalSeo";
 import { ScrollReveal } from "@/components/ScrollReveal";
 
 const heroImage = "/manus-storage/dhruva-buffet-hero_5062b44e.webp";
-const brassBuffet = "/manus-storage/dhruva-brass-buffet_7590f1e7.jpg";
+const brassBuffet = "/manus-storage/dhruva-brass-buffet-optimized_4dae9f8f.webp";
 
 const services = [
-  { icon: CalendarHeart, title: "Wedding & reception", label: "Wedding banquets", image: "/manus-storage/dhruva-wedding-table_374d063a.jpg", alt: "An Indian wedding table arranged with celebration food", copy: "Well-paced banquet service and menus designed around the occasion." },
-  { icon: Sparkles, title: "Live counter moments", label: "Live service", image: "/manus-storage/dhruva-live-counter_5f6ac40b.jpg", alt: "Chefs preparing food at a live catering counter", copy: "Freshly made counter experiences that bring energy to the celebration." },
-  { icon: UtensilsCrossed, title: "Family occasions", label: "Private celebrations", image: "/manus-storage/dhruva-desserts_9d002133.jpg", alt: "Traditional Indian sweets arranged for a private celebration", copy: "Intimate engagement, birthday, and house-event catering from 50 guests." },
-  { icon: UsersRound, title: "Corporate gatherings", label: "Large-format service", image: "/manus-storage/dhruva-menu-spread_55792867.jpg", alt: "A generous Indian food spread prepared for a catered gathering", copy: "Dependable meal service for teams, launches, conferences, and large groups." },
+  { icon: CalendarHeart, title: "Wedding & reception", label: "Wedding banquets", image: "/manus-storage/dhruva-wedding-table-fast_104d449f.webp", alt: "An Indian wedding table arranged with celebration food", copy: "Well-paced banquet service and menus designed around the occasion." },
+  { icon: Sparkles, title: "Live counter moments", label: "Live service", image: "/manus-storage/dhruva-live-counter-optimized_83ef3cb2.webp", alt: "Chefs preparing food at a live catering counter", copy: "Freshly made counter experiences that bring energy to the celebration." },
+  { icon: UtensilsCrossed, title: "Family occasions", label: "Private celebrations", image: "/manus-storage/dhruva-desserts-optimized_f0056a0a.webp", alt: "Traditional Indian sweets arranged for a private celebration", copy: "Intimate engagement, birthday, and house-event catering from 50 guests." },
+  { icon: UsersRound, title: "Corporate gatherings", label: "Large-format service", image: "/manus-storage/dhruva-menu-spread-optimized_f99233c0.webp", alt: "A generous Indian food spread prepared for a catered gathering", copy: "Dependable meal service for teams, launches, conferences, and large groups." },
 ];
 
 const eventScales = [

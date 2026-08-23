@@ -15,16 +15,16 @@ export function LoadingScreen() {
     const reveal = () => {
       if (completed) return;
       completed = true;
-      const remaining = Math.max(0, 780 - (Date.now() - startedAt));
+      const remaining = Math.max(0, 420 - (Date.now() - startedAt));
       revealTimer = window.setTimeout(() => {
         setLeaving(true);
-        dismissTimer = window.setTimeout(() => setVisible(false), 360);
+        dismissTimer = window.setTimeout(() => setVisible(false), 220);
       }, remaining);
     };
 
     if (document.readyState === "complete") reveal();
     else window.addEventListener("load", reveal, { once: true });
-    fallbackTimer = window.setTimeout(reveal, 2400);
+    fallbackTimer = window.setTimeout(reveal, 1500);
 
     return () => {
       window.removeEventListener("load", reveal);
