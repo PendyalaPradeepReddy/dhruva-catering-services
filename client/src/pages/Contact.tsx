@@ -4,8 +4,9 @@ import type { FormEvent } from "react";
 import { BUSINESS, PageShell } from "@/components/SiteChrome";
 import { Seo } from "@/components/Seo";
 import { MapView } from "@/components/Map";
+import { ASSETS } from "@/lib/assets";
 
-const contactImage = "/manus-storage/dhruva-biryani-hero_84528e2b.jpg";
+const contactImage = ASSETS.biryani;
 
 export default function Contact() {
   function submitInquiry(event: FormEvent<HTMLFormElement>) { event.preventDefault(); const fields = new FormData(event.currentTarget); const name = fields.get("name")?.toString() || ""; const phone = fields.get("phone")?.toString() || ""; const eventType = fields.get("eventType")?.toString() || ""; const date = fields.get("date")?.toString() || ""; const guests = fields.get("guests")?.toString() || ""; const details = fields.get("details")?.toString() || ""; const message = `Hi Dhruva Catering, I would like to inquire about a catering menu for an upcoming event.\n\nName: ${name}\nPhone: ${phone}\nEvent: ${eventType}\nDate: ${date}\nEstimated guests: ${guests}\nDetails: ${details}`; window.open(`https://wa.me/919849493933?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer"); }

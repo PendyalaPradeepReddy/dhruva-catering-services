@@ -1,5 +1,6 @@
 /** Telangana Feast Editorial: clear local discoverability with useful page titles and straightforward metadata. */
 import { useEffect } from "react";
+import { ASSETS } from "@/lib/assets";
 
 type SeoProps = {
   title: string;
@@ -17,7 +18,7 @@ function upsertMeta(attribute: "name" | "property", key: string, value: string) 
   tag.setAttribute("content", value);
 }
 
-export function Seo({ title, description, image = "/manus-storage/dhruva-buffet-hero_5062b44e.webp" }: SeoProps) {
+export function Seo({ title, description, image = ASSETS.hero }: SeoProps) {
   useEffect(() => {
     document.title = title;
     const url = `${window.location.origin}${window.location.pathname}`;

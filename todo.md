@@ -14,3 +14,8 @@
 - [x] Add an explicit Vite plugins array compatible with Cloudflare’s Vite setup detection.
 - [x] Add a checked-in Cloudflare Worker configuration for single-page app routing.
 - [x] Verify the Cloudflare build command succeeds without interactive Wrangler setup.
+- [x] Add optimized website images to a GitHub-tracked static asset directory.
+- [x] Replace Manus-managed image paths with repository-hosted static paths for Cloudflare deployment.
+- [x] Change the connected GitHub repository visibility to public.
+- [x] Build, verify, and synchronize the GitHub-ready asset update.
+- [ ] Change the connected GitHub repository visibility to public.

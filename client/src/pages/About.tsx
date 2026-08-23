@@ -2,8 +2,9 @@
 import { Check, ShieldCheck, UsersRound } from "lucide-react";
 import { PageShell } from "@/components/SiteChrome";
 import { Seo } from "@/components/Seo";
+import { ASSETS } from "@/lib/assets";
 
-const photo = "/manus-storage/dhruva-copper-buffet_52259e59.jpeg";
+const photo = ASSETS.copperBuffet;
 
 export default function About() {
   return <PageShell><Seo title="About Dhruva Catering Services | Hanamkonda" description="Learn about Dhruva Catering Services, serving thoughtful Telangana, South Indian and North Indian menus for events across Hanamkonda and beyond." /><main>
