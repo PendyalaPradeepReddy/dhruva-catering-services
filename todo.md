@@ -11,3 +11,6 @@
 - [x] Inspect the current production build and identify the largest loading-path opportunities.
 - [x] Optimize image fetch priority, non-critical runtime work, and loading-state timing without reducing usability.
 - [x] Validate the optimized production build and preserve responsive behavior.
+- [x] Add an explicit Vite plugins array compatible with Cloudflare’s Vite setup detection.
+- [x] Add a checked-in Cloudflare Worker configuration for single-page app routing.
+- [x] Verify the Cloudflare build command succeeds without interactive Wrangler setup.
